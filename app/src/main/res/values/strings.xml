@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">정태왕렬 쏴죽이기</string>
+    <string name="lblscore">Score :</string>
+    <string name="initialScore">000</string>
+    <string name="lblhighestScore">Highest Score :</string>
+    <string name="initialhighestscore">000</string>
+    <string name="lblgameover">GAME OVER</string>
+    <string name="restart">Restart</string>
+    <string name="exit">Exit</string>
+</resources>
