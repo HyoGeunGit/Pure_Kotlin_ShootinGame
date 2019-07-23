@@ -50,7 +50,6 @@ class GameView(context: Context) : View(context) {
         @JvmStatic
         var spaceShipHeight: Int = 0
     }
-
     init {
         val display = (getContext() as Activity).windowManager.defaultDisplay
         val point = Point()
@@ -166,7 +165,8 @@ class GameView(context: Context) : View(context) {
                     missileList.get(i).y -= missileList[i].mVelocity
                     canvas.drawBitmap(missileList.get(i).missile, (missileList.get(i).x).toFloat(), (missileList.get(i).y).toFloat(), null)
 
-                    if (missileList.get(i).x >= yellowTargetList.get(0).x && missileList.get(i).x + missileList.get(i).getWidth() <= yellowTargetList.get(0).x + yellowTargetList.get(0).getWidth() && missileList.get(i).y >= yellowTargetList.get(0).y &&
+                    if (missileList.get(i).x >= yellowTargetList.get(0).x && missileList.get(i).x + missileList.get(i).getWidth() <=
+                            yellowTargetList.get(0).x + yellowTargetList.get(0).getWidth() && missileList.get(i).y >= yellowTargetList.get(0).y &&
                             missileList.get(i).y <= yellowTargetList.get(0).y + yellowTargetList.get(0).getHeight()) {
 
                         val explosion = Explosion(context)
@@ -182,7 +182,8 @@ class GameView(context: Context) : View(context) {
                             soundPool.play(fireShotSoundId, 1f, 1f, 0, 0, 1f)
                         }
 
-                    } else if (missileList.get(i).x >= yellowTargetList.get(1).x && missileList.get(i).x + missileList.get(i).getWidth() <= yellowTargetList.get(1).x + yellowTargetList[1].getWidth() && missileList.get(i).y >= yellowTargetList.get(1).y &&
+                    } else if (missileList.get(i).x >= yellowTargetList.get(1).x && missileList.get(i).x + missileList.get(i).getWidth() <=
+                            yellowTargetList.get(1).x + yellowTargetList[1].getWidth() && missileList.get(i).y >= yellowTargetList.get(1).y &&
                             missileList.get(i).y <= yellowTargetList[1].y + yellowTargetList[1].getHeight()) {
 
                         val explosion = Explosion(context)
@@ -197,7 +198,8 @@ class GameView(context: Context) : View(context) {
                             soundPool.play(fireShotSoundId, 1f, 1f, 0, 0, 1f)
                         }
 
-                    } else if (missileList.get(i).x >= purpleTargetList.get(0).x && missileList.get(i).x + missileList.get(i).getWidth() <= purpleTargetList.get(0).x + purpleTargetList[0].getWidth() && missileList.get(i).y >= purpleTargetList.get(0).y &&
+                    } else if (missileList.get(i).x >= purpleTargetList.get(0).x && missileList.get(i).x + missileList.get(i).getWidth() <=
+                            purpleTargetList.get(0).x + purpleTargetList[0].getWidth() && missileList.get(i).y >= purpleTargetList.get(0).y &&
                             missileList.get(i).y <= purpleTargetList.get(0).y + purpleTargetList.get(0).getHeight()) {
 
                         val explosion = Explosion(context)
@@ -212,7 +214,8 @@ class GameView(context: Context) : View(context) {
                             soundPool.play(fireShotSoundId, 1f, 1f, 0, 0, 1f)
                         }
 
-                    } else if (missileList.get(i).x >= purpleTargetList[1].x && missileList.get(i).x + missileList.get(i).getWidth() <= purpleTargetList[1].x + purpleTargetList[1].getWidth() && missileList.get(i).y >= purpleTargetList[1].y &&
+                    } else if (missileList.get(i).x >= purpleTargetList[1].x && missileList.get(i).x + missileList.get(i).getWidth() <=
+                            purpleTargetList[1].x + purpleTargetList[1].getWidth() && missileList.get(i).y >= purpleTargetList[1].y &&
                             missileList.get(i).y <= purpleTargetList[1].y + purpleTargetList[1].getHeight()) {
 
                         val explosion = Explosion(context)
